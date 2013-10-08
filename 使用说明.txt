@@ -1,0 +1,7 @@
+1、input路径下放的是待导入存在的excel中的分城市存储的数据，每添加一个城市，要在
+  config/ProvinceListConfig文件中增加一行所在省份的名字全拼，而且一定要保证顺序完全一致
+2、config路径下的是可以根据需要进行配置的数据，其中ExcelTableNameConfig中规定excel中表的名称
+  DescriptionConfig 下的四个文件man、women、gay、lesbian为四种需求类型的简单描述，每一个都可以添加更多
+  只要保证每行一条即可
+3、配置好之后只要双击bindData.x.x.exe，output目录下的db文件即为处理结果。如果要在原有的基础上在累加数据，需要先将
+  原来的db文件放在output目录下，且名字和将要导入的excel的文件名一致
